@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\PRODUCCION LPS</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Themes/SiteDefault/css/vuetify.min.css">
+      <publishTime>05/09/2018 11:23:11</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/axios.min.js">
+      <publishTime>05/10/2018 15:41:15</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/jquery-3.3.1.min.js">
+      <publishTime>04/30/2018 11:45:30</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/jquery.mask.min.js">
+      <publishTime>05/04/2018 11:14:50</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/polyfill.min.js">
+      <publishTime>05/02/2018 11:36:28</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/script.js">
+      <publishTime>05/16/2018 15:24:54</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/script.min.js">
+      <publishTime>05/10/2018 14:16:00</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/v-money.js">
+      <publishTime>05/04/2018 12:35:21</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/vue-router.min.js">
+      <publishTime>05/16/2018 15:03:58</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/vuedist.js">
+      <publishTime>05/02/2018 11:41:04</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/vuedist.min.js">
+      <publishTime>05/10/2018 12:06:23</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/vuetify.js">
+      <publishTime>05/10/2018 12:18:23</publishTime>
+    </File>
+    <File Include="App_Themes/SiteDefault/js/vuetify.min.js">
+      <publishTime>05/10/2018 12:19:14</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>04/30/2018 17:53:53</publishTime>
+    </File>
+    <File Include="bin/CalculadoraLPS_Web.dll">
+      <publishTime>05/16/2018 16:42:06</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>05/11/2018 15:18:23</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>05/11/2018 15:18:36</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/04/2018 15:16:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>05/04/2018 15:16:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>05/04/2018 15:16:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/04/2018 15:16:25</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/16/2018 15:20:21</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/04/2018 15:25:09</publishTime>
+    </File>
+    <File Include="MasterPage/Master.Master">
+      <publishTime>05/16/2018 11:44:34</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/11/2018 15:18:36</publishTime>
+    </File>
+    <File Include="test.aspx">
+      <publishTime>05/04/2018 11:28:12</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/16/2018 16:42:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

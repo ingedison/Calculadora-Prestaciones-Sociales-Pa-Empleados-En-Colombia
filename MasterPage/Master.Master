@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="CalculadoraLPS_Web.MasterPage.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'/>
+    <link href="../App_Themes/SiteDefault/css/vuetify.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style>
+                    /*  SECTIONS  */
+            .section {
+	            clear: both;
+	            padding: 0px;
+	            margin: 0px;
+            }
+
+            /*  COLUMN SETUP  */
+            .col {
+	            display: block;
+	            float:left;
+	            margin: 1% 0 1% 2%;
+            }
+            .col:first-child { margin-left: 0; }
+
+            /*  GROUPING  */
+            .group:before,
+            .group:after { content:""; display:table; }
+            .group:after { clear:both;}
+            .group { zoom:1; /* For IE 6/7 */ }
+            /*  GRID OF TWO  */
+            .span_2_of_2 {
+	            width: 100%;
+            }
+            .span_1_of_2 {
+	            width: 49%;
+            }
+            .rad_responsive label, .chk_responsive label{
+                overflow: visible !important;
+                white-space:normal !important;
+            }
+            .input-group__selections__comma{
+                white-space:nowrap;
+            }
+            .especialtd{
+                border-bottom: 5px solid #00ACC8;
+            }
+            .table-footer {
+                background-color:#eee;
+            }
+            .redTd{
+                    background: #e57373;
+                    color: white;
+            }
+            .yellowTd{
+                    background: #FBC02D;
+                    color: white;
+            }
+
+            /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+            @media only screen and (max-width: 900px) {
+	            .col { 
+		            margin: 1% 0 1% 0%;
+	            }
+            }
+
+            @media only screen and (max-width: 900px) {
+	            .span_2_of_2, .span_1_of_2 { width: 100%; }
+            }
+
+            @media only screen and (max-width: 578px) {
+	            .col { 
+		            margin: 1% 0 1% 0%;
+	            }
+            }
+
+            .corner-ribbon{
+                            width: 250px;
+                            height: 37px;
+                            background: #006573;
+                            position: absolute;
+                            top: 25px;
+                            left: -50px;
+                            text-align: center;
+                            line-height: 37px;
+                            letter-spacing: 1px;
+                            color: #f0f0f0;
+                            transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                            z-index: 2;
+                            padding-top: 1px;
+                            padding-left: 66px;
+                            font-weight: bold;
+                            font-size: 12pt;
+                        }
+            .corner-ribbon.top-right{
+                            top: -19px;
+                            right: -79px;
+                            left: auto;
+                            transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+            }
+            .corner-ribbon.sticky{
+                      position: absolute;
+                    }
+            .corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+                }
+            .corner-ribbon.blue{background-color: #006573 !important;}
+
+
+            
+.loadnigMsg {
+	margin:auto;
+	top:20px;
+	width: 250px;
+}
+body { background: #eee; }
+figure { 
+  position: relative;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 6.250em; height: 6.250em;
+  animation: rotate 1.5s linear infinite;
+}
+.white { 
+  top: 0; bottom: 0; left: 0; right: 0; 
+  background: white; 
+  animation: flash 2.4s linear infinite;
+  opacity: 0;
+}
+.dot {
+  position: absolute;
+  margin: auto;
+  width: 2.4em; height: 2.4em;
+  border-radius: 100%;
+  transition: all 1s ease;
+}
+.dot:nth-child(2) { top: 0; bottom: 0; left: 0; background: #006573; animation: dotsY 2.4s linear infinite; }
+.dot:nth-child(3) { left: 0; right: 0; top: 0; background: #00ACC8; animation: dotsX 2.4s linear infinite; }
+.dot:nth-child(4) { top: 0; bottom: 0; right: 0; background: #E31D1A; animation: dotsY 2.4s linear infinite; }
+.dot:nth-child(5) { left: 0; right: 0; bottom: 0; background: #F7BE07; animation: dotsX 2.4s linear infinite; }
+
+@keyframes rotate {
+  0% { transform: rotate( 0 ); }
+  10% { width: 6.250em; height: 6.250em; }
+  66% { width: 2.4em; height: 2.4em; }
+  100%{ transform: rotate(360deg); width: 6.250em; height: 6.250em; } /*css comment*/
+}
+
+@keyframes dotsY {
+  66% { opacity: .1; width: 2.4em; }
+  77%{ opacity: 1; width: 0; }
+}
+@keyframes dotsX {
+  66% { opacity: .1; height: 2.4em;}
+  77%{ opacity: 1; height: 0; }
+}
+
+@keyframes flash {
+  33% { opacity: 0; border-radius: 0%; }
+  55%{ opacity: .6; border-radius: 100%; }
+  66%{ opacity: 0; }
+}
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="_BodyContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
